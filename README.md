@@ -2,6 +2,10 @@
 
 A function which loads a given image and calculates a dominant colour suitable for background elements, as well as the unprocessed average colour.
 
+### Requirements
+
++ Node.js 8+ (uses Promises and generators)
+
 ### Usage
 
 ```js
