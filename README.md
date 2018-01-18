@@ -9,7 +9,7 @@ A function which loads a given image and calculates a dominant colour suitable f
 ### Usage
 
 ```js
-const img2color = require('./index.js');
+const img2color = require('img2color');
 
 img2color('./img/1.jpg')
   .then(colors => console.log(colors));
