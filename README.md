@@ -35,3 +35,21 @@ output:
 */
 
 ```
+
+You can also control how `img2color` adjusts the colour by specifying an `options` argument:
+
+
+```js
+const img2color = require('img2color');
+
+img2color(
+  './img/1.jpg',
+  {
+    saturationOffset: 30 // how much to increase saturation (0-100, default 24)
+    valueOffset: 12 // how much to increase the value (0-100, default 8)
+  }
+  ).then(colors => console.log(colors));
+
+```
+
+In HSV, *saturation* controls the "vibrancy" of the colour and *value* controls brightness.
